@@ -15,6 +15,7 @@
     <string name="logo">Logo</string>
     <string name="recomendados">LUGARES RECOMENDADOS</string>
     <string name="populares">LUGARES POPULARES</string>
+    <string name="olvidada">¿Contraseña olvidada?</string>
     <string name="description">Es una de las mejores ciudades del mundo. Es una mezcolanza de diversas y emocionantes experiencias que cualquiera puede disfrutar.</string>
     <!-- Declaración de textos en bottom bar -->
     <string name="home">Home</string>

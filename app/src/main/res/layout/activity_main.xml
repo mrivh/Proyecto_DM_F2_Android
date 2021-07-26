@@ -46,12 +46,29 @@
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="12dp"
         />
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp">
 
-    <CheckBox android:id="@+id/checkbox_meat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/recordar"/>
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recordar"/>
         <!-- android:onClick="onCheckboxClicked" -->
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/olvidada"
+            android:gravity="end|center"
+            android:layout_marginStart="100dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            />
+
+
+
+    </FrameLayout>
 
 
 
