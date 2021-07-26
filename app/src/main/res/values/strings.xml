@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LifeXperience</string>
+    <!--String en login -->
+    <string name="login_button">ENTRAR</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <!--String en perfil de usuario y guía -->
+    <string name="recordar">Recordar</string>
+    <string name="nacimiento">Fecha de nacimiento</string>
+    <string name="email">Correo</string>
+    <string name="phone">Número telefónico</string>
+    <!--Descripción de contenido en imágenes -->
+    <string name="image">Imágen de usuario</string>
+    <!-- Declaración de textos -->
+    <string name="logo">Logo</string>
+    <string name="recomendados">LUGARES RECOMENDADOS</string>
+    <string name="populares">LUGARES POPULARES</string>
+    <!-- Declaración de textos en bottom bar -->
+    <string name="home">Logo</string>
+    <string name="travel">Logo</string>
+    <string name="favorites">Logo</string>
+    <string name="messages">Logo</string>
+    <string name="user">Logo</string>
+</resources>

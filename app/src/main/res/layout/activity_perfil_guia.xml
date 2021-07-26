@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_guia">
+
+    <!-- Logo e ícono para editar-->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/logo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:background="@color/gray"
+        />
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:contentDescription="@string/image"
+        />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Perfil_guia">
+
+        <!-- Inserción de ícono - imagen de usuario -->
+        <ImageView
+            android:layout_height="200dp"
+            android:layout_width="200dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:contentDescription="@string/image"
+            />
+
+        <!-- Creación de inputs -->
+        <!-- 1.- Campo de usuario -->
+        <EditText
+            android:id="@+id/editText1"
+            android:hint="@string/usuario"
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:maxLength="10"
+            android:layout_marginHorizontal="24dp"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="12dp"
+            />
+
+        <!-- 2.- Campo de fecha de nacimiento -->
+        <EditText
+            android:id="@+id/editText2"
+            android:hint="@string/nacimiento"
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:maxLength="10"
+            android:layout_marginHorizontal="24dp"
+            android:inputType="text|date"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="12dp"
+            />
+
+        <!-- 3.- Campo de correo -->
+        <EditText
+            android:id="@+id/editText3"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:maxLength="10"
+            android:layout_marginHorizontal="24dp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="12dp"
+            />
+
+        <!-- 4.- Campo de número de teléfono -->
+        <EditText
+            android:id="@+id/editText4"
+            android:hint="@string/phone"
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:maxLength="10"
+            android:layout_marginHorizontal="24dp"
+            android:inputType="numberDecimal"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="12dp"
+            />
+
+    </LinearLayout>
+
+    <!-- Bottom navbar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_corners"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

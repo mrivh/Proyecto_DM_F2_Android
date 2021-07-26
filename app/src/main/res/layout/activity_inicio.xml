@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <!-- Logo e ícono para editar-->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/logo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:background="@color/gray"
+        />
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:contentDescription="@string/image"
+        />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Inicio">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/recomendados"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/populares"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <!-- Bottom navbar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_corners"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

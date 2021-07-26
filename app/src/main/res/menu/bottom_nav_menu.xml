@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home"
+        android:id="@+id/bottomNavigationHomeMenuId"
+        android:icon="@drawable/baseline_launch_black_24dp"/>
+    <item android:title="@string/travel"
+        android:id="@+id/bottomNavigationTravelMenuId"
+        android:icon="@drawable/baseline_launch_black_24dp"/>
+    <item android:title="@string/favorites"
+        android:id="@+id/bottomNavigationFavoritesMenuId"
+        android:icon="@drawable/baseline_launch_black_24dp"/>
+    <item android:title="@string/messages"
+        android:id="@+id/bottomNavigationMessagesMenuId"
+        android:icon="@drawable/baseline_launch_black_24dp"/>
+    <item android:title="@string/user"
+        android:id="@+id/bottomNavigationUserMenuId"
+        android:icon="@drawable/baseline_launch_black_24dp"/>
+</menu>
