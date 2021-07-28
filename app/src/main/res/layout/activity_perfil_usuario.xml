@@ -53,7 +53,7 @@
         <!-- 1.- Campo de usuario -->
         <EditText
             android:id="@+id/editText1"
-            android:hint="@string/usuario"
+            android:hint="@string/userPlaceholder"
             android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
         <!-- 2.- Campo de fecha de nacimiento -->
         <EditText
             android:id="@+id/editText2"
-            android:hint="@string/nacimiento"
+            android:hint="@string/birthDate"
             android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -20,7 +20,7 @@
     <!-- 1.- Campo de usuario -->
     <EditText
         android:id="@+id/editText1"
-        android:hint="@string/usuario"
+        android:hint="@string/userPlaceholder"
         android:importantForAutofill="no"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
     <!-- 2.- Campo de contraseña -->
     <EditText
         android:id="@+id/editText2"
-        android:hint="@string/contraseña"
+        android:hint="@string/password"
         android:importantForAutofill="no"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,12 +53,12 @@
         <CheckBox android:id="@+id/checkbox_meat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/recordar"/>
+            android:text="@string/remember"/>
         <!-- android:onClick="onCheckboxClicked" -->
         <TextView
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:text="@string/olvidada"
+            android:text="@string/forgotten"
             android:gravity="end|center"
             android:layout_marginStart="100dp"
             android:textStyle="bold"
