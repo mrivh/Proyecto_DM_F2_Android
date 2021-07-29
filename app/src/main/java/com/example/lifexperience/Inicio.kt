@@ -8,7 +8,7 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
         
-                imageView.setOnClickListener {
+        imageView.setOnClickListener {
 
             startActivity(Intent(this, Lugar::class.java))
         }
