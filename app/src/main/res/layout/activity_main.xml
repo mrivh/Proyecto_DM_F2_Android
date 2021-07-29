@@ -19,23 +19,23 @@
     <!-- Creación de inputs -->
     <!-- 1.- Campo de usuario -->
     <EditText
-        android:id="@+id/editText1"
-        android:hint="@string/userPlaceholder"
+        android:id="@+id/editTextEmail"
+        android:hint="@string/emailPlaceholder"
         android:importantForAutofill="no"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:maxLength="10"
+        android:maxLength="50"
         android:layout_marginHorizontal="24dp"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="12dp"
         />
 
     <!-- 2.- Campo de contraseña -->
     <EditText
-        android:id="@+id/editText2"
-        android:hint="@string/password"
+        android:id="@+id/editTextPassword"
+        android:hint="@string/passwordPlaceholder"
         android:importantForAutofill="no"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
     <Button
         android:id="@+id/btnLogin"
         android:background="@drawable/rounded_corners"
-        android:text="@string/login_button"
+        android:text="@string/btnLogin"
         android:paddingHorizontal="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

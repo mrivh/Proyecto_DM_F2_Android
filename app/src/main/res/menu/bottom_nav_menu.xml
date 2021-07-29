@@ -12,7 +12,7 @@
     <item android:title="@string/messages"
         android:id="@+id/bottomNavigationMessagesMenuId"
         android:icon="@drawable/baseline_launch_black_24dp"/>
-    <item android:title="@string/user"
+    <item android:title="@string/usernamePlaceholder"
         android:id="@+id/bottomNavigationUserMenuId"
         android:icon="@drawable/baseline_launch_black_24dp"/>
 </menu>
