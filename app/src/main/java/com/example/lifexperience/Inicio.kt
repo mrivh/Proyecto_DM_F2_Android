@@ -1,7 +1,9 @@
 package com.example.lifexperience
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 
 class Inicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +31,7 @@ class Inicio : AppCompatActivity() {
 
             startActivity(Intent(this, Perfil_guia::class.java))
         }
-        
+
         var imageView5 = findViewById<ImageButton>(R.id.imageView5)
 
         imageView5.setOnClickListener {

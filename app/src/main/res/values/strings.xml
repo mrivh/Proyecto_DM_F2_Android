@@ -1,26 +1,26 @@
 <resources>
     <string name="app_name">LifeXperience</string>
     <!--String en login -->
-    <string name="login_button">ENTRAR</string>
-    <string name="userPlaceholder">Usuario</string>
-    <string name="passwordPlaceholder">Contraseña</string>
+    <string name="btnLogin">Login</string>
+    <string name="emailPlaceholder">Email</string>
+    <string name="passwordPlaceholder">Password</string>
     <!--String en perfil de usuario y guía -->
-    <string name="remember">Recordar</string>
-    <string name="birthDate">Fecha de nacimiento</string>
-    <string name="email">Correo</string>
-    <string name="phone">Número telefónico</string>
+    <string name="remember">Remember</string>
+    <string name="birthDate">Birthdate</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
     <!--Descripción de contenido en imágenes -->
-    <string name="image">Imagen de usuario</string>
+    <string name="image">User image</string>
     <!-- Declaración de textos -->
     <string name="logo">Logo</string>
-    <string name="recommended">LUGARES RECOMENDADOS</string>
-    <string name="popular">LUGARES POPULARES</string>
-    <string name="forgotten">¿Contraseña olvidada?</string>
+    <string name="recommended">Recommended places</string>
+    <string name="popular">Popular places</string>
+    <string name="forgotten">Forgot password?</string>
     <string name="description">Es una de las mejores ciudades del mundo. Es una mezcolanza de diversas y emocionantes experiencias que cualquiera puede disfrutar.</string>
     <!-- Declaración de textos en bottom bar -->
     <string name="home">Home</string>
     <string name="travel">Travel</string>
-    <string name="favorites">Fav</string>
-    <string name="messages">Msg</string>
-    <string name="username">User</string>
+    <string name="favorites">Favorites</string>
+    <string name="messages">Messages</string>
+    <string name="usernamePlaceholder">Username</string>
 </resources>
