@@ -1,9 +1,12 @@
 package com.example.lifexperience
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
 
 class Inicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +18,7 @@ class Inicio : AppCompatActivity() {
         imageView.setOnClickListener {
 
             startActivity(Intent(this, Lugar::class.java))
-    }
+        }
 
         var imageView2 = findViewById<ImageButton>(R.id.imageView2)
 
@@ -39,5 +42,9 @@ class Inicio : AppCompatActivity() {
             startActivity(Intent(this, Perfil_Usuario::class.java))
         }
 
+
+
     }
 }
+
+

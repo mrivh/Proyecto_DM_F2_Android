@@ -1,89 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Login">
 
-    <!-- Inserción de ícono - imagen de usuario -->
+    <!-- Logo -->
     <ImageView
-        android:layout_height="200dp"
-        android:layout_width="200dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
-        android:contentDescription="@string/image"
-        />
+        android:layout_height="50dp"
+        android:layout_width="120dp"
+        android:src="@drawable/logoapp"
+        android:contentDescription="@string/logoapp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
 
-    <!-- Creación de inputs -->
-    <!-- 1.- Campo de usuario -->
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:hint="@string/emailPlaceholder"
-        android:importantForAutofill="no"
+
+    <!-- Layout del formulario con la imagen de usuario -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:maxLength="50"
-        android:layout_marginHorizontal="24dp"
-        android:inputType="textEmailAddress"
-        android:drawableStart="@drawable/ic_baseline_person_24"
-        android:drawablePadding="12dp"
-        />
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Login">
 
-    <!-- 2.- Campo de contraseña -->
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:hint="@string/passwordPlaceholder"
-        android:importantForAutofill="no"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:maxLength="10"
-        android:layout_marginHorizontal="24dp"
-        android:inputType="textPassword"
-        android:drawableStart="@drawable/ic_baseline_lock_24"
-        android:drawablePadding="12dp"
-        />
-    <FrameLayout
-        android:layout_width="300dp"
-        android:layout_height="50dp">
-
-        <CheckBox android:id="@+id/checkbox_meat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/remember"/>
-        <!-- android:onClick="onCheckboxClicked" -->
-        <TextView
+        <!-- Inserción de ícono - imagen de usuario -->
+        <ImageView
+            android:layout_height="200dp"
             android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="@string/forgotten"
-            android:gravity="end|center"
-            android:layout_marginStart="100dp"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:textColor="@color/gray"
-            />
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:contentDescription="@string/image" />
+
+        <!-- Creación de inputs -->
+
+        <!-- 1.- Campo de email -->
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/emailPlaceholder"
+            android:layout_marginTop="55dp"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 2.- Campo de contraseña -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordPlaceholder"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <!-- Checkbox para recordar al usuario -->
+
+            <!-- Recuperación de contraseña -->
+
+            <CheckBox
+                android:id="@+id/check_remember"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/remember"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.26"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Guidelines de posición, auxilares para los márgenes -->
+            <TextView
+                android:id="@+id/link_forgotten"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="end|center"
+                android:text="@string/forgotten"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@+id/check_remember"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.693"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="330dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="330dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <!-- Creación de botón - Entrar -->
 
-    </FrameLayout>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="273dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="27dp"
+            android:text="@string/btnLogin" />
 
-
-
-    <!-- Creación de botón -->
-    <Button
-        android:id="@+id/btnLogin"
-        android:background="@drawable/rounded_corners"
-        android:text="@string/btnLogin"
-        android:paddingHorizontal="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        />
-
-
-
-
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

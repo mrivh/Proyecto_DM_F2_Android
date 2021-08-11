@@ -1,26 +1,53 @@
 <resources>
     <string name="app_name">LifeXperience</string>
     <!--String en login -->
-    <string name="btnLogin">Login</string>
+    <string name="btnLogin">INGRESAR</string>
     <string name="emailPlaceholder">Email</string>
-    <string name="passwordPlaceholder">Password</string>
+    <string name="passwordPlaceholder">Contraseña</string>
+    <!--String en registro -->
+    <string name="user_name">Nombre</string>
+    <string name="btnRegister">REGISTRAR</string>
+    <!--String en inicio -->
+    <string name="first_phrase">LUGARES RECOMENDADOS</string>
+    <string name="second_phrase">LUGARES POPULARES</string>
+    <!--String en actividades -->
+    <string name="activityTitles">ACTIVIDADES & EXPERIENCIAS</string>
+    <string name="food">COMIDA & BEBIDA</string>
+    <string name="famous_places">LUGARES EMBLEMÁTICOS</string>
+    <string name="arts">ARTE & CULTURA</string>
+    <string name="activities">ACTIVIDADES AL AIRE LIBRE</string>
+    <!--String en experiencias -->
+    <string name="gastronomy">GASTRONOMÍA TRADICIONAL</string>
+    <string name="tours">TOURS GASTRONÓMICOS</string>
+    <string name="gastronomy_one">Degustación de Sake</string>
+    <string name="gastronomy_two">Platos tradicionales</string>
+    <string name="tour_one">Rutas gastronómicas por los mercados de Tokio</string>
+    <string name="tour_two">Tour a los mejores lugares de Nigiri</string>
+    <string name="rate_gastronomy_one">4.00</string>
+    <string name="rate_gastronomy_two">4.60</string>
+    <string name="rate_tour_one">4.95</string>
+    <string name="rate_tour_two">4.50</string>
     <!--String en perfil de usuario y guía -->
-    <string name="remember">Remember</string>
+    <string name="remember">Recordar</string>
     <string name="birthDate">Birthdate</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
+    <string name="btnSave">GUARDAR</string>
+    <!--Tipos de usuario a registrar -->
+    <string name="traveler">Usuario</string>
+    <string name="tour_guide">Guía</string>
     <!--Descripción de contenido en imágenes -->
     <string name="image">User image</string>
+    <string name="logoapp">Logo</string>
+    <!-- Lugares/Descripción -->
+    <string name="placeTokio">TOKIO</string>
+    <string name="descriptionTokio">Es una de las mejores ciudades del mundo. Es una mezcolanza de diversas y emocionantes experiencias que cualquiera puede disfrutar.</string>
     <!-- Declaración de textos -->
-    <string name="logo">Logo</string>
-    <string name="recommended">Recommended places</string>
-    <string name="popular">Popular places</string>
-    <string name="forgotten">Forgot password?</string>
-    <string name="description">Es una de las mejores ciudades del mundo. Es una mezcolanza de diversas y emocionantes experiencias que cualquiera puede disfrutar.</string>
+    <string name="forgotten">¿Contraseña olvidada?</string>
     <!-- Declaración de textos en bottom bar -->
-    <string name="home">Home</string>
-    <string name="travel">Travel</string>
-    <string name="favorites">Favorites</string>
-    <string name="messages">Messages</string>
-    <string name="usernamePlaceholder">Username</string>
+    <string name="home">Inicio</string>
+    <string name="booking">Reservación</string>
+    <string name="settings">Configuración</string>
+    <string name="favorites">Favoritos</string>
+    <string name="user">Usuario</string>
 </resources>

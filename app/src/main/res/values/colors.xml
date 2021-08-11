@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#ffcccccc</color>
     <color name="LightGray">#708090</color>
+    <!-- Colores principales-->
+    <color name="primary_color">#8018D1</color>
 </resources>

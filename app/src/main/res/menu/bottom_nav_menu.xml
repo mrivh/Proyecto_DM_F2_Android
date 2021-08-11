@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/home"
-        android:id="@+id/bottomNavigationHomeMenuId"
-        android:icon="@drawable/baseline_launch_black_24dp"/>
-    <item android:title="@string/travel"
-        android:id="@+id/bottomNavigationTravelMenuId"
-        android:icon="@drawable/baseline_launch_black_24dp"/>
-    <item android:title="@string/favorites"
-        android:id="@+id/bottomNavigationFavoritesMenuId"
-        android:icon="@drawable/baseline_launch_black_24dp"/>
-    <item android:title="@string/messages"
-        android:id="@+id/bottomNavigationMessagesMenuId"
-        android:icon="@drawable/baseline_launch_black_24dp"/>
-    <item android:title="@string/usernamePlaceholder"
-        android:id="@+id/bottomNavigationUserMenuId"
-        android:icon="@drawable/baseline_launch_black_24dp"/>
+    <!-- Inicio -->
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+
+    <!-- Reservación -->
+    <item
+        android:id="@+id/booking"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_repair_service_24"
+        android:title="@string/booking"/>
+
+    <!-- Configuración -->
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_build_24"
+        android:title="@string/settings"/>
+
+    <!-- Favoritos -->
+    <item
+        android:id="@+id/favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="@string/favorites"/>
+
+    <!-- Cuenta del usuario -->
+    <item
+        android:id="@+id/user"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/user"/>
 </menu>
