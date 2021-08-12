@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeXperience">
-        <activity android:name=".Descripciones"></activity>
+        <activity android:name=".Descripciones" />
         <activity android:name=".Experiencias" />
         <activity android:name=".Actividades" />
         <activity android:name=".Registro" />

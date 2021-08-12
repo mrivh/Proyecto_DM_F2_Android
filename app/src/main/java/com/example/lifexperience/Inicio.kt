@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -13,7 +14,7 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
         
-        var imageView = findViewById<ImageButton>(R.id.imageView)
+        /*var imageView = findViewById<ImageButton>(R.id.imageView)
 
         imageView.setOnClickListener {
 
@@ -40,7 +41,7 @@ class Inicio : AppCompatActivity() {
         imageView5.setOnClickListener {
 
             startActivity(Intent(this, Perfil_Usuario::class.java))
-        }
+        }*/
 
 
 

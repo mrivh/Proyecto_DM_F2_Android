@@ -11,10 +11,10 @@
     <string name="first_phrase">LUGARES RECOMENDADOS</string>
     <string name="second_phrase">LUGARES POPULARES</string>
     <!--String en actividades -->
-    <string name="activityTitles">ACTIVIDADES & EXPERIENCIAS</string>
-    <string name="food">COMIDA & BEBIDA</string>
+    <string name="activityTitles">ACTIVIDADES Y EXPERIENCIAS</string>
+    <string name="food">COMIDA Y BEBIDA</string>
     <string name="famous_places">LUGARES EMBLEMÁTICOS</string>
-    <string name="arts">ARTE & CULTURA</string>
+    <string name="arts">ARTE Y CULTURA</string>
     <string name="activities">ACTIVIDADES AL AIRE LIBRE</string>
     <!--String en experiencias -->
     <string name="gastronomy">GASTRONOMÍA TRADICIONAL</string>
