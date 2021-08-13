@@ -11,17 +11,10 @@
     <string name="first_phrase">LUGARES RECOMENDADOS</string>
     <string name="second_phrase">LUGARES POPULARES</string>
     <!--String en actividades -->
-<<<<<<< HEAD
-    <string name="activityTitles">ACTIVIDADES &amp; EXPERIENCIAS</string>
-    <string name="food">COMIDA &amp; BEBIDA</string>
-    <string name="famous_places">LUGARES EMBLEMÁTICOS</string>
-    <string name="arts">ARTE &amp; CULTURA</string>
-=======
     <string name="activityTitles">ACTIVIDADES Y EXPERIENCIAS</string>
     <string name="food">COMIDA Y BEBIDA</string>
     <string name="famous_places">LUGARES EMBLEMÁTICOS</string>
     <string name="arts">ARTE Y CULTURA</string>
->>>>>>> 2e87bcc667eba1205c7025897803f51b8cfd35ca
     <string name="activities">ACTIVIDADES AL AIRE LIBRE</string>
     <!--String en experiencias -->
     <string name="gastronomy">GASTRONOMÍA TRADICIONAL</string>

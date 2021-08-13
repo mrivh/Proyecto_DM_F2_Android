@@ -6,12 +6,11 @@ import android.view.Menu
 import android.widget.ImageButton
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-<<<<<<< HEAD
+
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
-=======
+
 import androidx.cardview.widget.CardView
->>>>>>> 2e87bcc667eba1205c7025897803f51b8cfd35ca
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -24,38 +23,11 @@ class Inicio : AppCompatActivity() {
         val appBar = findViewById<Toolbar>(R.id.app_bar)
         this.setSupportActionBar(appBar)
         setupDrawer(appBar)
-        
-        /*var imageView = findViewById<ImageButton>(R.id.imageView)
-
-        imageView.setOnClickListener {
-
-            startActivity(Intent(this, Lugar::class.java))
-        }
-
-        var imageView2 = findViewById<ImageButton>(R.id.imageView2)
-
-        imageView2.setOnClickListener {
-
-            startActivity(Intent(this, Inicio::class.java))
-        }
 
 
-        var imageView4 = findViewById<ImageButton>(R.id.imageView4)
-
-        imageView4.setOnClickListener {
-
-            startActivity(Intent(this, Perfil_guia::class.java))
-        }
-
-        var imageView5 = findViewById<ImageButton>(R.id.imageView5)
-
-        imageView5.setOnClickListener {
-
-            startActivity(Intent(this, Perfil_Usuario::class.java))
-        }*/
 
     }
-
+//appbar
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
         return super.onCreateOptionsMenu(menu)
