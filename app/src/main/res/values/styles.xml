@@ -1,9 +1,3 @@
 <resources>
-    <style name = "LifeXperience.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name= "backgroundTint">@color/colorPrimary</item>
-    </style>
-    <style name="roundedCorners" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">20dp</item>
-    </style>
+
 </resources>

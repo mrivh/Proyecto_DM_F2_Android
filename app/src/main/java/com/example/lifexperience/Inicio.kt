@@ -20,22 +20,7 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
-        val appBar = findViewById<Toolbar>(R.id.app_bar)
-        this.setSupportActionBar(appBar)
-        setupDrawer(appBar)
 
-
-
-    }
-//appbar
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.toolbar_menu, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    private fun setupDrawer(toolbar: Toolbar){
-        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        val drawerToggle = ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open_drawer,R.string.close_drawer)
     }
 }
 

@@ -137,6 +137,6 @@
         app:menu="@menu/bottom_nav_menu"
         app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
         app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
-        style="@style/LifeXperience.BottomNavigationView"/>
+        app:backgroundTint="@color/primary_color"/>
 
 </RelativeLayout>

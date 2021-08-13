@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.widget.doOnTextChanged
+import com.google.android.material.textfield.TextInputLayout
 
 const val USER_NAME = "com.example.lifexperience.USER_NAME"
 
@@ -20,20 +22,22 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var editTextEmail = findViewById<TextInputLayout>(R.id.editTextEmail)
+        var editTextPassword = findViewById<TextInputLayout>(R.id.editTextPassword)
 
-        var editTextEmail = findViewById<TextView>(R.id.editTextEmail)
-        var editTextPassword = findViewById<TextView>(R.id.editTextPassword)
+
         var btnLogin = findViewById<Button>(R.id.btnLogin)
 
-        var email: String
-        var password: String
         var isRegistered: Boolean = false
         val bundle = Bundle()
+
+
+
         btnLogin.setOnClickListener {
-            email = editTextEmail.text.toString()
-            password = editTextPassword.text.toString()
+            val inputText = editTextEmail.editText?.text.toString()
+            val inputPassword = editTextPassword.editText?.text.toString()
             for (user in users){
-                if(user.email == email && user.password == password){
+                if(user.email == inputText && user.password == inputPassword){
                     bundle.putString(USER_NAME, user.username.toString())
                     isRegistered = true
                 }
@@ -48,5 +52,6 @@ class Login : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Email or password incorrect", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 }

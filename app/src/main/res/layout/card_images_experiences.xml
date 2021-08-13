@@ -25,8 +25,6 @@
             android:background="@color/white"
             android:scaleType="centerCrop"
             android:src="@drawable/tokio" />
-<<<<<<< HEAD
-=======
 
         <CheckBox
             android:id="@+id/icon"
@@ -37,7 +35,7 @@
             app:buttonTint="@android:color/white"
 
             />
->>>>>>> 2e87bcc667eba1205c7025897803f51b8cfd35ca
+
 
     </androidx.cardview.widget.CardView>
 
