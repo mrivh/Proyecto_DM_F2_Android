@@ -11,10 +11,10 @@
     <string name="first_phrase">LUGARES RECOMENDADOS</string>
     <string name="second_phrase">LUGARES POPULARES</string>
     <!--String en actividades -->
-    <string name="activityTitles">ACTIVIDADES & EXPERIENCIAS</string>
-    <string name="food">COMIDA & BEBIDA</string>
+    <string name="activityTitles">ACTIVIDADES &amp; EXPERIENCIAS</string>
+    <string name="food">COMIDA &amp; BEBIDA</string>
     <string name="famous_places">LUGARES EMBLEMÁTICOS</string>
-    <string name="arts">ARTE & CULTURA</string>
+    <string name="arts">ARTE &amp; CULTURA</string>
     <string name="activities">ACTIVIDADES AL AIRE LIBRE</string>
     <!--String en experiencias -->
     <string name="gastronomy">GASTRONOMÍA TRADICIONAL</string>
@@ -45,9 +45,25 @@
     <!-- Declaración de textos -->
     <string name="forgotten">¿Contraseña olvidada?</string>
     <!-- Declaración de textos en bottom bar -->
+    <string name="travel">Travel</string>
+    <string name="favorites">Favorites</string>
+    <string name="messages">Messages</string>
+    <string name="usernamePlaceholder">Username</string>
     <string name="home">Inicio</string>
     <string name="booking">Reservación</string>
     <string name="settings">Configuración</string>
-    <string name="favorites">Favoritos</string>
     <string name="user">Usuario</string>
+    <string name="delete">Eliminar</string>
+    <string name="share">Compartir</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Cerrar</string>
+    <string name="delete_element">Deleting element</string>
+    <string name="sharing_element">Sharing element</string>
+    <string name="drawer.home">Home</string>
+    <string name="drawer.account">Cuenta</string>
+    <string name="drawer.payments">Pago</string>
+    <string name="drawer.settings">Configuración</string>
+    <string name="drawer.extra">Adicional</string>
+    <string name="drawer.about">Acerca de</string>
+    <string name="drawer.privacy">Privacidad</string>
 </resources>

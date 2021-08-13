@@ -1,6 +1,6 @@
 package com.example.lifexperience
 
-class Data_Experiences {
-    var images: String,
-    var textDescription: String
-}
+data class Data_Experiences(
+    val images: String,
+    val textDescription: String
+)
