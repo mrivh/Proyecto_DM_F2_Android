@@ -6,15 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".Experiencias">
 
-    <!-- Logo e ícono para editar-->
-    <ImageView
-        android:layout_height="50dp"
-        android:layout_width="120dp"
-        android:src="@drawable/logoapp"
-        android:contentDescription="@string/logoapp"
+    <!-- Barra de búsqueda -->
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Busca tu nueva experiencia"
+        android:iconifiedByDefault="false"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/search_background"
+        android:queryBackground="@android:color/transparent"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        />
 
 
     <LinearLayout
@@ -23,45 +27,43 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".Inicio">
+        tools:context=".Experiencias">
 
-
+        <!-- Título de la experiencia-->
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
-
             android:text="@string/gastronomy"
             android:textColor="@color/primary_color"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-
-
+        <!-- RecyclerView/lista referente al slider de imágenes y textos-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/images_places"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-
+            android:layout_height="200dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/card_images_experiences"
 
             />
 
+        <!-- Título de la experiencia-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
             android:text="@string/second_phrase"
-
             android:textColor="@color/primary_color"
             android:textSize="20sp"
             android:textStyle="bold"
 
             />
 
+        <!-- RecyclerView/lista referente al slider de imágenes y textos-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/circles_images_places"
             android:layout_width="match_parent"
@@ -86,6 +88,8 @@
         android:layout_alignParentBottom="true"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
         style="@style/LifeXperience.BottomNavigationView"/>
 
 

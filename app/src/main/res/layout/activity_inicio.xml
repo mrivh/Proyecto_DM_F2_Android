@@ -180,7 +180,13 @@
             android:layout_alignParentBottom="true"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/bottom_nav_menu"
+<<<<<<< HEAD
             style="@style/LifeXperience.BottomNavigationView"/>-->
+=======
+            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+            app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+            style="@style/LifeXperience.BottomNavigationView"/>
+>>>>>>> 2e87bcc667eba1205c7025897803f51b8cfd35ca
 
     <!--AppBar-->
     <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"

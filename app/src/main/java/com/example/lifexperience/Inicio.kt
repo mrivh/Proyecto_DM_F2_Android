@@ -6,8 +6,12 @@ import android.view.Menu
 import android.widget.ImageButton
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+=======
+import androidx.cardview.widget.CardView
+>>>>>>> 2e87bcc667eba1205c7025897803f51b8cfd35ca
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -21,7 +25,7 @@ class Inicio : AppCompatActivity() {
         this.setSupportActionBar(appBar)
         setupDrawer(appBar)
         
-        var imageView = findViewById<ImageButton>(R.id.imageView)
+        /*var imageView = findViewById<ImageButton>(R.id.imageView)
 
         imageView.setOnClickListener {
 
@@ -48,7 +52,7 @@ class Inicio : AppCompatActivity() {
         imageView5.setOnClickListener {
 
             startActivity(Intent(this, Perfil_Usuario::class.java))
-        }
+        }*/
 
     }
 
