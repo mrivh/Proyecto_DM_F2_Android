@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:background="@color/white"
             android:scaleType="centerCrop"
-            android:src="@drawable/Tokio" />
+            android:src="@drawable/tokio" />
 
     </androidx.cardview.widget.CardView>
 
