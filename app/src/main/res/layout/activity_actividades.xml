@@ -38,7 +38,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
             android:textColor="@color/primary_color"
-            android:text="@string/activityTitles"
+            android:text="@string/activity_titles"
             android:textSize="20sp"
             android:textStyle="bold" />
 

@@ -35,7 +35,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
             android:gravity="center"
-            android:text="@string/first_phrase"
+            android:text="@string/recommended_places"
             android:textColor="@color/primary_color"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -56,7 +56,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="@string/second_phrase"
+            android:text="@string/popular_places"
             android:textColor="@color/primary_color"
             android:textSize="20sp"
             android:textStyle="bold"

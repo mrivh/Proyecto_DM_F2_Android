@@ -11,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_width="120dp"
         android:src="@drawable/logoapp"
-        android:contentDescription="@string/logoapp"
+        android:contentDescription="@string/app_logo"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="100dp" />
@@ -33,7 +33,7 @@
             android:id="@+id/editTextUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user_name"
+            android:hint="@string/username"
             android:layout_marginTop="100dp"
             app:startIconDrawable="@drawable/ic_baseline_person_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -52,7 +52,7 @@
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/emailPlaceholder"
+            android:hint="@string/email_placeholder"
             android:layout_marginTop="10dp"
             app:startIconDrawable="@drawable/ic_baseline_email_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -71,7 +71,7 @@
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/passwordPlaceholder"
+            android:hint="@string/password_placeholder"
             android:layout_marginTop="10dp"
             app:startIconDrawable="@drawable/ic_baseline_lock_24"
             app:endIconMode="password_toggle"
@@ -107,7 +107,7 @@
                 android:id="@+id/tour_guide"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="@string/tour_guide"
+                android:text="@string/guide"
                 app:layout_constraintBaseline_toBaselineOf="@+id/traveler"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.739"
@@ -138,7 +138,7 @@
             android:layout_width="273dp"
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
-            android:text="@string/btnRegister" />
+            android:text="@string/btn_register" />
 
     </LinearLayout>
 </RelativeLayout>
