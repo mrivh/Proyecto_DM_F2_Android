@@ -25,13 +25,10 @@ class Login : AppCompatActivity() {
         var editTextEmail = findViewById<TextInputLayout>(R.id.editTextEmail)
         var editTextPassword = findViewById<TextInputLayout>(R.id.editTextPassword)
 
-
         var btnLogin = findViewById<Button>(R.id.btnLogin)
 
         var isRegistered: Boolean = false
         val bundle = Bundle()
-
-
 
         btnLogin.setOnClickListener {
             val inputText = editTextEmail.editText?.text.toString()
