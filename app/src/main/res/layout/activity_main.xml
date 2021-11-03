@@ -79,11 +79,15 @@
 
             <!-- Recuperación de contraseña -->
 
-            <CheckBox
-                android:id="@+id/check_remember"
-                android:layout_width="100dp"
+            <TextView
+                android:id="@+id/textForgotPassword"
+                android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/remember"
+                android:gravity="end|left|center_vertical"
+                android:text="@string/forgotten_password"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.26"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,11 +95,11 @@
 
             <!-- Guidelines de posición, auxilares para los márgenes -->
             <TextView
-                android:id="@+id/link_forgotten"
+                android:id="@+id/textRegister"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:gravity="end|center"
-                android:text="@string/forgotten_password"
+                android:text="@string/btn_register"
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:textStyle="bold"

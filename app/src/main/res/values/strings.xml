@@ -11,10 +11,10 @@
     <string name="recommended_places">Recommended Places</string>
     <string name="popular_places">Popular Places</string>
     <!--Strings in activities -->
-    <string name="activity_titles">Activities & Experiences</string>
+    <string name="activity_titles">Activities &amp; Experiences</string>
     <string name="food">Food</string>
     <string name="iconic_places">Iconic Places</string>
-    <string name="arts">Ast & Culture</string>
+    <string name="arts">Ast &amp; Culture</string>
     <string name="outdoor_activities">Outdoor Activities</string>
     <!--Strings in experiences -->
     <string name="gastronomy">Gastronomy</string>
@@ -22,7 +22,7 @@
     <string name="gastronomy_one">Sake Tasting</string>
     <string name="gastronomy_two">Traditional Plates</string>
     <string name="tour_one">Food tours through the markets of Tokyo</string>
-    <string name="tour_two">Nigiri's best places</string>
+    <string name="tour_two">Nigiri\'s best places</string>
     <string name="rate_gastronomy_one">4.00</string>
     <string name="rate_gastronomy_two">4.60</string>
     <string name="rate_tour_one">4.95</string>

@@ -26,6 +26,7 @@ class Login : AppCompatActivity() {
         var editTextPassword = findViewById<TextInputLayout>(R.id.editTextPassword)
 
         var btnLogin = findViewById<Button>(R.id.btnLogin)
+        var textRegister = findViewById<TextView>(R.id.textRegister)
 
         var isRegistered: Boolean = false
         val bundle = Bundle()
@@ -48,6 +49,14 @@ class Login : AppCompatActivity() {
             } else {
                 Toast.makeText(applicationContext, "Email or password incorrect", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        textRegister.setOnClickListener {
+            Toast.makeText(applicationContext, "Register", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Registro::class.java ).apply{ // Va desde this hasta Registro
+                putExtras(bundle)
+            }
+            startActivity(intent)
         }
 
     }
