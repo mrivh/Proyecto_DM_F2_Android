@@ -5,7 +5,7 @@
     <string name="email_placeholder">Email</string>
     <string name="password_placeholder">Password</string>
     <!--Strings in register -->
-    <string name="username">Name</string>
+    <string name="username">Username</string>
     <string name="btn_register">Register</string>
     <!--Strings in main -->
     <string name="recommended_places">Recommended Places</string>

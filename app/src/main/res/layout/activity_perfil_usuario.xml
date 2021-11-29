@@ -38,7 +38,7 @@
         <!-- 1.- Campo de usuario -->
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/editTextUser"
+            android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/username"

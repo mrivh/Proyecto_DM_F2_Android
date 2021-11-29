@@ -6,18 +6,18 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.widget.doOnTextChanged
 import com.google.android.material.textfield.TextInputLayout
+import com.example.lifexperience.AllUsers.Companion.users
 
 const val USER_NAME = "com.example.lifexperience.USER_NAME"
 
 class Login : AppCompatActivity() {
-    private var users = listOf(
+    /*private var users = listOf(
         User("miriam","miriam@gmail.com", "miriam123"),
         User("geraldine","gera@gmail.com", "gera123"),
         User("alfredo","alfredo@gmail.com", "alfredo123"),
         User("randy" ,"randy@gmail.com", "randy123")
-    )
+    )*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +31,10 @@ class Login : AppCompatActivity() {
         var isRegistered: Boolean = false
         val bundle = Bundle()
 
+        for (user in users){
+            println(user.username)
+        }
+
         btnLogin.setOnClickListener {
             val inputText = editTextEmail.editText?.text.toString()
             val inputPassword = editTextPassword.editText?.text.toString()
@@ -40,6 +44,7 @@ class Login : AppCompatActivity() {
                     isRegistered = true
                 }
             }
+            
             if(isRegistered){
                 Toast.makeText(applicationContext, "Welcome", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, Inicio::class.java ).apply{ // Va desde this hasta Inicio
@@ -58,6 +63,5 @@ class Login : AppCompatActivity() {
             }
             startActivity(intent)
         }
-
     }
 }
