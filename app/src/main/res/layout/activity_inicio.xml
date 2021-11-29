@@ -10,7 +10,7 @@
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Busca tu nueva experiencia"
+        android:queryHint="Search your new experience"
         android:iconifiedByDefault="false"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/search_background"
@@ -41,15 +41,22 @@
             android:textStyle="bold" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
+        <fragment
+            android:id="@+id/fragmentList"
+            class="com.example.lifexperience.ListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <!-- <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/images_places"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/card_images_places"
-
-            />
+            /> -->
 
         <TextView
             android:layout_width="match_parent"
@@ -60,7 +67,6 @@
             android:textColor="@color/primary_color"
             android:textSize="20sp"
             android:textStyle="bold"
-
             />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -70,27 +76,23 @@
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/card_circle_images_places"
-
             />
-
 
     </LinearLayout>
 
     <!-- Bottom navbar -->
 
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_nav_menu"
-            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
-            app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
-            app:backgroundTint="@color/primary_color"/>
-
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@color/primary_color"
+        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>

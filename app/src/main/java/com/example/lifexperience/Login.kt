@@ -42,6 +42,7 @@ class Login : AppCompatActivity() {
                 if(user.email == inputText && user.password == inputPassword){
                     bundle.putString(USER_NAME, user.username.toString())
                     isRegistered = true
+                    bundle.putString(USER_NAME, user.username)
                 }
             }
             
