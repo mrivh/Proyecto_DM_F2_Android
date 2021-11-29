@@ -41,14 +41,22 @@
             android:textStyle="bold" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
+        <fragment
+            android:id="@+id/fragmentList"
+            class="com.example.lifexperience.ListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <!-- <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/images_places"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/card_images_places"
-            />
+            /> -->
 
         <TextView
             android:layout_width="match_parent"

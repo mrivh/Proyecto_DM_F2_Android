@@ -1,26 +1,30 @@
-  package com.example.lifexperience
+package com.example.lifexperience
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.widget.ImageButton
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 
-import androidx.appcompat.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
 
-import androidx.cardview.widget.CardView
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-
-
-class Inicio : AppCompatActivity() {
+  class Inicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
+        val listFragment = supportFragmentManager.findFragmentById(R.id.fragmentList) as ListFragment
 
+        listFragment.setListener{
+            val detailFragment = supportFragmentManager.findFragmentById(R.id.fragmentDetail) as? DetailFragment
+
+            // Pantalla grande, mostrar detalle en el fragment
+            if(detailFragment!=null) {
+                detailFragment.showProduct(it)
+            } else {
+                //pantalla pequeña, navegar a un nuevo Activity
+                val intent = Intent(this, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.PLACE, it)
+                startActivity(intent)
+            }
+        }
     }
 }
 

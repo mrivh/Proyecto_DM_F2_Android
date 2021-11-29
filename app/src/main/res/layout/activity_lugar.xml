@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".Lugar">
 
     <!-- Imagen/Background del lugar -->
     <ImageView
+        android:id="@+id/imageBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/tokio"
+        android:alpha="0.3"
         android:contentDescription="@string/place_tokio"/>
 
     <!-- Título del lugar -->
