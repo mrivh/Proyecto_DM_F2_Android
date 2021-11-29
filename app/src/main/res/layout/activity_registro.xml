@@ -11,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_width="120dp"
         android:src="@drawable/logoapp"
-        android:contentDescription="@string/logoapp"
+        android:contentDescription="@string/app_logo"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="100dp" />
@@ -20,8 +20,8 @@
     <!-- Layout del formulario -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
         tools:context=".Registro">
 
@@ -30,13 +30,13 @@
         <!-- 1.- Campo de usuario -->
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/editTextUser"
+            android:id="@+id/editTextUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user_name"
             android:layout_marginTop="100dp"
-            app:startIconDrawable="@drawable/ic_baseline_person_24"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:hint="@string/username"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -50,12 +50,12 @@
         <com.google.android.material.textfield.TextInputLayout
 
             android:id="@+id/editTextEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/emailPlaceholder"
             android:layout_marginTop="10dp"
-            app:startIconDrawable="@drawable/ic_baseline_email_24"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:hint="@string/email_placeholder"
+            app:startIconDrawable="@drawable/ic_baseline_email_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -69,13 +69,13 @@
         <!-- 3.- Campo de contraseña -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editTextPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/passwordPlaceholder"
             android:layout_marginTop="10dp"
-            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:hint="@string/password_placeholder"
             app:endIconMode="password_toggle"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -86,49 +86,48 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <!-- <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"> -->
 
-            <!-- Checkbox para tipos de usuario -->
+        <!-- Guidelines de posición, auxilares para los márgenes
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.19951338" />
 
-            <!-- Viajero/Usuario -->
-            <CheckBox
-                android:id="@+id/traveler"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="81dp" /> -->
+
+        <!-- RadioButtons for user types -->
+
+        <!-- Traveler/Guide -->
+        <RadioGroup
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdBtnTraveler"
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:text="@string/traveler"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.237"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:checked="true"/>
 
-            <CheckBox
-                android:id="@+id/tour_guide"
+            <RadioButton
+                android:id="@+id/rdBtnGuide"
                 android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="@string/tour_guide"
-                app:layout_constraintBaseline_toBaselineOf="@+id/traveler"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.739"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:layout_height="match_parent"
+                android:text="@string/guide" />
+        </RadioGroup>
 
-            <!-- Guidelines de posición, auxilares para los márgenes -->
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_end="330dp" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="330dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- </androidx.constraintlayout.widget.ConstraintLayout> -->
 
 
         <!-- Creación de botón - Registrar -->
@@ -138,7 +137,7 @@
             android:layout_width="273dp"
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
-            android:text="@string/btnRegister" />
+            android:text="@string/btn_register" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -12,7 +12,7 @@
         android:layout_height="50dp"
         android:layout_width="120dp"
         android:src="@drawable/logoapp"
-        android:contentDescription="@string/logoapp"
+        android:contentDescription="@string/app_logo"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp" />
@@ -31,17 +31,17 @@
             android:layout_height="200dp"
             android:layout_width="200dp"
             android:src="@drawable/ic_baseline_account_circle_24"
-            android:contentDescription="@string/image" />
+            android:contentDescription="@string/user_image" />
 
         <!-- Creación de inputs -->
 
         <!-- 1.- Campo de usuario -->
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/editTextUser"
+            android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user_name"
+            android:hint="@string/username"
             android:layout_marginTop="1dp"
             app:startIconDrawable="@drawable/ic_baseline_person_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -60,7 +60,7 @@
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/birthDate"
+            android:hint="@string/birthdate"
             android:layout_marginTop="10dp"
             app:startIconDrawable="@drawable/ic_baseline_date_range_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -80,7 +80,7 @@
             android:id="@+id/editTextBirthdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/emailPlaceholder"
+            android:hint="@string/email_placeholder"
             android:layout_marginTop="10dp"
             app:startIconDrawable="@drawable/ic_baseline_email_24"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -122,7 +122,7 @@
             android:layout_width="273dp"
             android:layout_height="60dp"
             android:layout_marginTop="27dp"
-            android:text="@string/btnSave"
+            android:text="@string/btn_save"
 
             />
 

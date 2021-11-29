@@ -1,69 +1,69 @@
 <resources>
     <string name="app_name">LifeXperience</string>
-    <!--String en login -->
-    <string name="btnLogin">INGRESAR</string>
-    <string name="emailPlaceholder">Email</string>
-    <string name="passwordPlaceholder">Contraseña</string>
-    <!--String en registro -->
-    <string name="user_name">Nombre</string>
-    <string name="btnRegister">REGISTRAR</string>
-    <!--String en inicio -->
-    <string name="first_phrase">LUGARES RECOMENDADOS</string>
-    <string name="second_phrase">LUGARES POPULARES</string>
-    <!--String en actividades -->
-    <string name="activityTitles">ACTIVIDADES Y EXPERIENCIAS</string>
-    <string name="food">COMIDA Y BEBIDA</string>
-    <string name="famous_places">LUGARES EMBLEMÁTICOS</string>
-    <string name="arts">ARTE Y CULTURA</string>
-    <string name="activities">ACTIVIDADES AL AIRE LIBRE</string>
-    <!--String en experiencias -->
-    <string name="gastronomy">GASTRONOMÍA TRADICIONAL</string>
-    <string name="tours">TOURS GASTRONÓMICOS</string>
-    <string name="gastronomy_one">Degustación de Sake</string>
-    <string name="gastronomy_two">Platos tradicionales</string>
-    <string name="tour_one">Rutas gastronómicas por los mercados de Tokio</string>
-    <string name="tour_two">Tour a los mejores lugares de Nigiri</string>
+    <!--Strings in login -->
+    <string name="btn_login">Log in</string>
+    <string name="email_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <!--Strings in register -->
+    <string name="username">Username</string>
+    <string name="btn_register">Register</string>
+    <!--Strings in main -->
+    <string name="recommended_places">Recommended Places</string>
+    <string name="popular_places">Popular Places</string>
+    <!--Strings in activities -->
+    <string name="activity_titles">Activities &amp; Experiences</string>
+    <string name="food">Food</string>
+    <string name="iconic_places">Iconic Places</string>
+    <string name="arts">Ast &amp; Culture</string>
+    <string name="outdoor_activities">Outdoor Activities</string>
+    <!--Strings in experiences -->
+    <string name="gastronomy">Gastronomy</string>
+    <string name="tours">Gastronomic Tours</string>
+    <string name="gastronomy_one">Sake Tasting</string>
+    <string name="gastronomy_two">Traditional Plates</string>
+    <string name="tour_one">Food tours through the markets of Tokyo</string>
+    <string name="tour_two">Nigiri\'s best places</string>
     <string name="rate_gastronomy_one">4.00</string>
     <string name="rate_gastronomy_two">4.60</string>
     <string name="rate_tour_one">4.95</string>
     <string name="rate_tour_two">4.50</string>
-    <!--String en perfil de usuario y guía -->
-    <string name="remember">Recordar</string>
-    <string name="birthDate">Birthdate</string>
+    <!--Strings in user profile and guíde -->
+    <string name="remember">Remember</string>
+    <string name="birthdate">Birthdate</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
-    <string name="btnSave">GUARDAR</string>
-    <!--Tipos de usuario a registrar -->
-    <string name="traveler">Usuario</string>
-    <string name="tour_guide">Guía</string>
-    <!--Descripción de contenido en imágenes -->
-    <string name="image">User image</string>
-    <string name="logoapp">Logo</string>
-    <!-- Lugares/Descripción -->
-    <string name="placeTokio">TOKIO</string>
-    <string name="descriptionTokio">Es una de las mejores ciudades del mundo. Es una mezcolanza de diversas y emocionantes experiencias que cualquiera puede disfrutar.</string>
-    <!-- Declaración de textos -->
-    <string name="forgotten">¿Contraseña olvidada?</string>
-    <!-- Declaración de textos en bottom bar -->
+    <string name="btn_save">Save</string>
+    <!--User types -->
+    <string name="traveler">Traveler</string>
+    <string name="guide">Guide</string>
+    <!--Image content description -->
+    <string name="user_image">User image</string>
+    <string name="app_logo">Logo</string>
+    <!-- Places Description -->
+    <string name="place_tokio">Tokio</string>
+    <string name="description_tokio"> It is one of the best places in the world. It has a mixture of various and exciting experiences that anyone can enjoy </string>
+    <!-- Text declaration -->
+    <string name="forgotten_password">Forgot password?</string>
+    <!-- Bottom bar strings -->
     <string name="travel">Travel</string>
     <string name="favorites">Favorites</string>
     <string name="messages">Messages</string>
-    <string name="usernamePlaceholder">Username</string>
-    <string name="home">Inicio</string>
-    <string name="booking">Reservación</string>
-    <string name="settings">Configuración</string>
-    <string name="user">Usuario</string>
-    <string name="delete">Eliminar</string>
-    <string name="share">Compartir</string>
-    <string name="open_drawer">Abrir</string>
-    <string name="close_drawer">Cerrar</string>
+    <string name="username_placeholder">Username</string>
+    <string name="home">Home</string>
+    <string name="booking">Booking</string>
+    <string name="settings">Seetings</string>
+    <string name="user">User</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
     <string name="delete_element">Deleting element</string>
     <string name="sharing_element">Sharing element</string>
     <string name="drawer.home">Home</string>
-    <string name="drawer.account">Cuenta</string>
-    <string name="drawer.payments">Pago</string>
-    <string name="drawer.settings">Configuración</string>
-    <string name="drawer.extra">Adicional</string>
-    <string name="drawer.about">Acerca de</string>
-    <string name="drawer.privacy">Privacidad</string>
+    <string name="drawer.account">Accont</string>
+    <string name="drawer.payments">Payments</string>
+    <string name="drawer.settings">Settings</string>
+    <string name="drawer.extra">Extra</string>
+    <string name="drawer.about">About</string>
+    <string name="drawer.privacy">Privacy</string>
 </resources>
