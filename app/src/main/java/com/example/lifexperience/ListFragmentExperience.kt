@@ -16,13 +16,12 @@ class ListFragmentExperience: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // infla el layout para este Fragment
+        // Inflate layout for this Fragment
         return inflater.inflate(R.layout.fragment_list_experience, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        //super.onCreate(Bundle)
         setUpRecyclerView()
     }
 
@@ -34,9 +33,9 @@ class ListFragmentExperience: Fragment() {
         recyclerExperiences.setHasFixedSize(true)
         //recyclerPlacesPopular.layoutManager = LinearLayoutManager(activity)
         recyclerExperiences.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        //seteando el Adapter
+        // Setting adapter
         mAdapterExperience = RecyclerAdapterExperience( requireActivity(), getExperiences(), listener)
-        //asignando el Adapter al RecyclerView
+        // Assign adapter to RecyclerView
         recyclerExperiences.adapter = mAdapterExperience
     }
 

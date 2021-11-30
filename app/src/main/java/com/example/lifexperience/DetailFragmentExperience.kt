@@ -11,13 +11,7 @@ class DetailFragmentExperience: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.activity_descripciones, container, false)
-
-        /*tvProduct = view.findViewById(R.id.tvProduct)
-        tvDescription = view.findViewById(R.id.tvDescription)
-        rbRate = view.findViewById(R.id.rbRate)
-        imgProduct = view.findViewById(R.id.imgProduct)
-        tvPrice = view.findViewById(R.id.tvPrice)*/
+        val view = inflater.inflate(R.layout.activity_descriptions, container, false)
 
         return view
     }

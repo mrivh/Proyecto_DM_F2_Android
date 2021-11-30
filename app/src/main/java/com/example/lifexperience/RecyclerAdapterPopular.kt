@@ -10,15 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerAdapterPopular (
     private val context: Context,
-    private val places: MutableList<PlaceMain>,
-    private val clickListener: (PlaceMain) -> Unit): RecyclerView.Adapter<RecyclerAdapterPopular.ViewHolder>() {
+    private val places: MutableList<Place>,
+    private val clickListener: (Place) -> Unit): RecyclerView.Adapter<RecyclerAdapterPopular.ViewHolder>() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val place = places.get(position)
             holder.bind(place, context)
-
             holder.view.setOnClickListener { clickListener(place) }
-
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,12 +30,12 @@ class RecyclerAdapterPopular (
 
         class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
-            //obteniendo las referencias a las Views
+            // Getting references from views
             val placeName = view.findViewById<TextView>(R.id.namePopular) as TextView
             val placeImage = view.findViewById(R.id.imagePopular) as ImageView
 
-            //"atando" los datos a las Views
-            fun bind(place: PlaceMain, context: Context) {
+            // Attaching data to views
+            fun bind(place: Place, context: Context) {
                 placeName.text = place.name
                 placeImage.setImageResource(place.idImage)
             }

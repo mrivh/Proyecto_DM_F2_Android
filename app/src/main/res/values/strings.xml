@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">LifeXperience</string>
     <!--Strings in login -->
-    <string name="btn_login">Log in</string>
+    <string name="btn_login">Login</string>
     <string name="email_placeholder">Email</string>
     <string name="password_placeholder">Password</string>
     <!--Strings in register -->
     <string name="username">Username</string>
     <string name="btn_register">Register</string>
     <!--Strings in main -->
+    <string name="search_bar_placeholder">Find your next experience</string>
     <string name="recommended_places">Recommended Places</string>
     <string name="popular_places">Popular Places</string>
     <!--Strings in activities -->
