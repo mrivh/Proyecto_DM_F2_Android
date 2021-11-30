@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 
             // Big screen, show fragment detail
             if(detailFragment!=null) {
-                detailFragment.showProduct(it)
+                detailFragment.showPlaces(it)
             } else {
                 // Small screen, navigate to new activity
                 val intent = Intent(this, DetailActivityPlaces::class.java)
@@ -31,7 +31,7 @@ import androidx.appcompat.app.AppCompatActivity
 
             // Big screen, show fragment detail
             if(detailFragment!=null) {
-                detailFragment.showProduct(it)
+                detailFragment.showPlaces(it)
             } else {
                 // Small screen, navigate to new activity
                 val intent = Intent(this, DetailActivityPlaces::class.java)

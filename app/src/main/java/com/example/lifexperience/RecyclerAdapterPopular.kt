@@ -31,7 +31,7 @@ class RecyclerAdapterPopular (
         class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
             // Getting references from views
-            val placeName = view.findViewById<TextView>(R.id.namePopular) as TextView
+            val placeName = view.findViewById(R.id.namePopular) as TextView
             val placeImage = view.findViewById(R.id.imagePopular) as ImageView
 
             // Attaching data to views

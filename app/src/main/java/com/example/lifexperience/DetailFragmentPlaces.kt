@@ -13,7 +13,7 @@ class DetailFragmentPlaces: Fragment() {
     private lateinit var placeDescription: TextView
     private lateinit var placeImage: ImageView
 
-    // Traemos todas las views desde el layout
+    // Bring up all views from layout
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,7 +27,7 @@ class DetailFragmentPlaces: Fragment() {
         return view
     }
 
-    fun showProduct(place: Place){
+    fun showPlaces(place: Place){
         view?.visibility = View.VISIBLE
         placeName.text = place.name
         placeDescription.text = place.description

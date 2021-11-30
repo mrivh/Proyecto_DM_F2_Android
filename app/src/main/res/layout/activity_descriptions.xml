@@ -6,16 +6,117 @@
     android:layout_height="match_parent"
     tools:context=".Descriptions">
 
-    <TextView
-        android:id="@+id/TBD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Coming soon"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:textColor="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <CheckBox
+        android:id="@+id/iconLike"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:button="@drawable/ic_baseline_favorite_border_24"
+        app:buttonTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageExperience"
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ramen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionExperienceName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Lorem ipsum"
+        android:textColor="@color/primary_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageExperience"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/descriptionExperience"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:justificationMode="inter_word"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales purus rutrum neque tincidunt imperdiet. Etiam at vehicula nunc. Nulla mauris neque, facilisis non pretium sit amet, mollis interdum dui."
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionExperienceName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textMoreInfo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="More info"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionExperience" />
+
+    <TextView
+        android:id="@+id/textDescriptionRatings"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="5.0"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMoreInfo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUserComment"
+        android:layout_width="230dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescriptionRatings"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="top|left"
+            android:text="Username:"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textUserComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:layout_gravity="bottom"
+            android:justificationMode="inter_word"
+            android:padding="10dp"
+            android:text='"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales purus rutrum neque tincidunt imperdiet. Etiam at vehicula nunc."'
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
