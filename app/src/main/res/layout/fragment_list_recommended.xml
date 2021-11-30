@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ListFragment">
+    tools:context=".ListFragmentRecommended">
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerPlaces"
+        android:id="@+id/recyclerPlacesRecommended"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"

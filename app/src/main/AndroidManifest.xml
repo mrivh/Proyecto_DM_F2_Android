@@ -18,6 +18,7 @@
         <activity android:name=".Inicio" />
         <activity android:name=".Perfil_guia" />
         <activity android:name=".Perfil_Usuario" />
+        <activity android:name=".Perfil_Usuario" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".Login">
             <intent-filter>

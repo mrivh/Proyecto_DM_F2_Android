@@ -42,8 +42,8 @@
 
 
         <fragment
-            android:id="@+id/fragmentList"
-            class="com.example.lifexperience.ListFragment"
+            android:id="@+id/fragmentListRecommended"
+            class="com.example.lifexperience.ListFragmentRecommended"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="horizontal"
@@ -69,14 +69,19 @@
             android:textStyle="bold"
             />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <!-- <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/circles_images_places"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/card_circle_images_places"
-            />
+            tools:listitem="@layout/card_circle_images_places" /> -->
+
+        <fragment
+            android:id="@+id/fragmentListPopular"
+            class="com.example.lifexperience.ListFragmentPopular"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
 
     </LinearLayout>
 

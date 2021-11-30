@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.fragment_list.*
+import kotlinx.android.synthetic.main.fragment_list_recommended.*
 
-class ListFragment: Fragment() {
+class ListFragmentRecommended: Fragment() {
 
-    private lateinit var mAdapter : RecyclerAdapter
+    private lateinit var mAdapterRecommended : RecyclerAdapterRecommended
     private var listener : (PlaceMain) ->Unit = {}
 
     override fun onCreateView(
@@ -18,7 +18,7 @@ class ListFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // infla el layout para este Fragment
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.fragment_list_recommended, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -33,14 +33,14 @@ class ListFragment: Fragment() {
 
     //configuramos lo necesario para desplegar el RecyclerView
     private fun setUpRecyclerView(){
-        recyclerPlaces.setHasFixedSize(true)
+        recyclerPlacesRecommended.setHasFixedSize(true)
         //recyclerPlaces.layoutManager = LinearLayoutManager(activity)
-        recyclerPlaces.layoutManager =
+        recyclerPlacesRecommended.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         //seteando el Adapter
-        mAdapter = RecyclerAdapter( requireActivity(), getPlaces(), listener)
+        mAdapterRecommended = RecyclerAdapterRecommended( requireActivity(), getPlaces(), listener)
         //asignando el Adapter al RecyclerView
-        recyclerPlaces.adapter = mAdapter
+        recyclerPlacesRecommended.adapter = mAdapterRecommended
     }
 
     private fun getPlaces(): MutableList<PlaceMain>{
