@@ -3,7 +3,7 @@ package com.example.lifexperience
 import android.os.Parcel
 import android.os.Parcelable
 
-data class PlaceMain(
+data class Place(
     var name: String,
     var description: String,
     var idImage: Int
@@ -25,12 +25,12 @@ data class PlaceMain(
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<PlaceMain> {
-        override fun createFromParcel(parcel: Parcel): PlaceMain {
-            return PlaceMain(parcel)
+    companion object CREATOR : Parcelable.Creator<Place> {
+        override fun createFromParcel(parcel: Parcel): Place {
+            return Place(parcel)
         }
 
-        override fun newArray(size: Int): Array<PlaceMain?> {
+        override fun newArray(size: Int): Array<Place?> {
             return arrayOfNulls(size)
         }
     }

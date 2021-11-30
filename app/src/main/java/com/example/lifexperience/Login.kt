@@ -12,16 +12,10 @@ import com.example.lifexperience.AllUsers.Companion.users
 const val USER_NAME = "com.example.lifexperience.USER_NAME"
 
 class Login : AppCompatActivity() {
-    /*private var users = listOf(
-        User("miriam","miriam@gmail.com", "miriam123"),
-        User("geraldine","gera@gmail.com", "gera123"),
-        User("alfredo","alfredo@gmail.com", "alfredo123"),
-        User("randy" ,"randy@gmail.com", "randy123")
-    )*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
         var editTextEmail = findViewById<TextInputLayout>(R.id.editTextEmail)
         var editTextPassword = findViewById<TextInputLayout>(R.id.editTextPassword)
 
@@ -48,7 +42,7 @@ class Login : AppCompatActivity() {
             
             if(isRegistered){
                 Toast.makeText(applicationContext, "Welcome", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, Inicio::class.java ).apply{ // Va desde this hasta Inicio
+                val intent = Intent(this, MainMenu::class.java ).apply{ // Va desde this hasta Inicio
                     putExtras(bundle)
                 }
                 startActivity(intent)
@@ -58,8 +52,7 @@ class Login : AppCompatActivity() {
         }
 
         textRegister.setOnClickListener {
-            Toast.makeText(applicationContext, "Register", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, Registro::class.java ).apply{ // Va desde this hasta Registro
+            val intent = Intent(this, Register::class.java ).apply{ // Va desde this hasta Registro
                 putExtras(bundle)
             }
             startActivity(intent)

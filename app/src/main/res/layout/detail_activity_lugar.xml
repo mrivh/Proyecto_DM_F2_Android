@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inicio">
+    tools:context=".MainMenu">
     <fragment
         android:id="@+id/fragmentDetail"
-        class="com.example.lifexperience.DetailFragment"
+        class="com.example.lifexperience.DetailFragmentPlaces"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

@@ -16,9 +16,7 @@ class RecyclerAdapterExperience (
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val experience = experiences.get(position)
             holder.bind(experience, context)
-
             holder.view.setOnClickListener { clickListener(experience) }
-
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,12 +30,12 @@ class RecyclerAdapterExperience (
 
         class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
-            //obteniendo las referencias a las Views
+            // Getting references from views
             val experienceName = view.findViewById<TextView>(R.id.nameExperience) as TextView
             val experienceRating = view.findViewById(R.id.ratingExperience) as TextView
             val experienceImage = view.findViewById(R.id.imageExperience) as ImageView
 
-            //"atando" los datos a las Views
+            // Attaching data to views
             fun bind(experience: Experience, context: Context) {
                 experienceName.text = experience.name
                 experienceRating.text = experience.rating.toString()
