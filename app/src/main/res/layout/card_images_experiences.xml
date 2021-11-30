@@ -9,7 +9,7 @@
 
     <!-- RecyclerView de experiencias-->
     <androidx.cardview.widget.CardView
-        android:id="@+id/carView"
+        android:id="@+id/cardExperience"
         android:layout_width="230dp"
         android:layout_height="160dp"
         app:cardCornerRadius="15dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/roundedImageView"
+            android:id="@+id/imageExperience"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"
@@ -27,7 +27,7 @@
             android:src="@drawable/tokio" />
 
         <CheckBox
-            android:id="@+id/icon"
+            android:id="@+id/iconLike"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="190dp"
@@ -40,7 +40,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/name_experience"
+        android:id="@+id/nameExperience"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:gravity="center_horizontal"
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.877" />
 
     <TextView
-        android:id="@+id/rate"
+        android:id="@+id/ratingExperience"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:gravity="center"

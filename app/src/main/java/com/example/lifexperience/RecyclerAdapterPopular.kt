@@ -23,8 +23,7 @@ class RecyclerAdapterPopular (
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val layoutInflater = LayoutInflater.from(parent.context)
-            return ViewHolder(layoutInflater.inflate(R.layout.card_circle_images_places, parent,false)
-            )
+            return ViewHolder(layoutInflater.inflate(R.layout.card_circle_images_places, parent,false))
         }
 
         override fun getItemCount(): Int {
