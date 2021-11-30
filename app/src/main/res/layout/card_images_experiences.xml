@@ -5,7 +5,7 @@
     android:layout_width="230dp"
     android:layout_height="200dp"
     android:layout_marginStart="20dp"
-    tools:context=".Experiencies">
+    tools:context=".Experiences">
 
     <!-- Experiences recyclerView-->
     <androidx.cardview.widget.CardView
@@ -42,7 +42,7 @@
         android:layout_height="20dp"
         android:gravity="center_horizontal"
         android:text="@string/gastronomy_one"
-        android:textColor="@color/black"
+        android:textColor="@color/gray"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

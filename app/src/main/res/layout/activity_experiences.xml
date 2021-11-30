@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Experiencies">
+    tools:context=".Experiences">
 
     <!-- Search bar -->
     <SearchView
@@ -27,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".Experiencies">
+        tools:context=".Experiences">
 
         <!-- Section title-->
         <TextView

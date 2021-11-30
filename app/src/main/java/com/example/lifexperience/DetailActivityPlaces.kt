@@ -18,13 +18,13 @@ class DetailActivityPlaces: AppCompatActivity() {
         val place = intent.getParcelableExtra<Place>(PLACE)
         val detailFragment = supportFragmentManager.findFragmentById(R.id.fragmentDetail) as? DetailFragmentPlaces
         if (place != null) {
-            detailFragment?.showProduct(place)
+            detailFragment?.showPlaces(place)
         }
         btnContinue = findViewById<Button>(R.id.btnContinue)
         val bundle = Bundle()
 
         btnContinue.setOnClickListener {
-            val intent = Intent(this, Experiencies::class.java ).apply{ // Va desde this hasta Inicio
+            val intent = Intent(this, Experiences::class.java ).apply{ // Va desde this hasta Inicio
                 putExtras(bundle)
             }
             startActivity(intent)

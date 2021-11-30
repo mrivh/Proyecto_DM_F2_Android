@@ -31,7 +31,7 @@ class RecyclerAdapterExperience (
         class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
             // Getting references from views
-            val experienceName = view.findViewById<TextView>(R.id.nameExperience) as TextView
+            val experienceName = view.findViewById(R.id.nameExperience) as TextView
             val experienceRating = view.findViewById(R.id.ratingExperience) as TextView
             val experienceImage = view.findViewById(R.id.imageExperience) as ImageView
 

@@ -101,7 +101,6 @@
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintBaseline_toBaselineOf="@+id/check_remember"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.693"
                 app:layout_constraintStart_toStartOf="parent" />
