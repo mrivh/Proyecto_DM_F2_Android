@@ -3,22 +3,20 @@ package com.example.lifexperience
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class DetailActivity: AppCompatActivity() {
+class DetailActivityExperience: AppCompatActivity() {
     companion object {
-        val PLACE = "PLACE"
+        val EXPERIENCE = "EXPERIENCE"
     }
-    private lateinit var btnContinue: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.detail_activity_lugar)
+        setContentView(R.layout.activity_descripciones)
 
-        val place = intent.getParcelableExtra<PlaceMain>(PLACE)
-        val detailFragment = supportFragmentManager.findFragmentById(R.id.fragmentDetail) as? DetailFragment
-        if (place != null) {
+        val experience = intent.getParcelableExtra<Experience>(EXPERIENCE)
+        val detailFragment = supportFragmentManager.findFragmentById(R.id.fragmentDetailExperience) as? DetailFragmentExperience
+        /*if (place != null) {
             detailFragment?.showProduct(place)
         }
         btnContinue = findViewById<Button>(R.id.btnContinue)
@@ -32,7 +30,7 @@ class DetailActivity: AppCompatActivity() {
             startActivity(intent)
             //println(place?.name)
             //println(place?.description)
-        }
+        }*/
         //Toast.makeText(applicationContext, "Test", Toast.LENGTH_SHORT).show()
         //btnActivities = view.findViewById(R.id.btnContinue)
     }

@@ -41,6 +41,14 @@
             android:textStyle="bold" />
 
         <!-- RecyclerView/lista referente al slider de imágenes y textos-->
+
+        <fragment
+            android:id="@+id/fragmentListExperience"
+            class="com.example.lifexperience.ListFragmentExperience"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <!-- Título de la experiencia
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/images_places"
             android:layout_width="match_parent"
@@ -49,30 +57,35 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/card_images_experiences"
 
-            />
+            /> -->
 
-        <!-- Título de la experiencia-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
-            android:text="@string/popular_places"
+            android:text="@string/arts"
             android:textColor="@color/primary_color"
             android:textSize="20sp"
             android:textStyle="bold"
 
             />
 
-        <!-- RecyclerView/lista referente al slider de imágenes y textos-->
+        <fragment
+            android:id="@+id/fragmentListExperience2"
+            class="com.example.lifexperience.ListFragmentExperience"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <!-- RecyclerView/lista referente al slider de imágenes y textos-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/circles_images_places"
             android:layout_width="match_parent"
             android:layout_height="270dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/card_images_experiences_2"
+            tools:listitem="@layout/card_images_experiences"
 
-            />
+            /> -->
 
 
     </LinearLayout>

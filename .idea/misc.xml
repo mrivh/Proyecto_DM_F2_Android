@@ -9,14 +9,24 @@
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/activity_inicio.xml" value="0.264" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/activity_lugar.xml" value="0.264" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/activity_main.xml" value="0.2760416666666667" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/activity_perfil_guia.xml" value="0.24375" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.24375" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/activity_registro.xml" value="0.264" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_activity_one.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_calendar.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_checkout.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_circle_images_places.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_experience_description.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_images_activities.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_images_experiences.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_images_experiences_2.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/card_images_places.xml" value="0.24375" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/detail_activity_experience.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/detail_activity_lugar.xml" value="0.2296875" />
         <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/fragment_list.xml" value="0.24375" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/fragment_list_experience.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/fragment_list_popular.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/alfredoe/AndroidStudioProjects/Proyecto_DM_F2_Android/app/src/main/res/layout/fragment_list_recommended.xml" value="0.24739583333333334" />
       </map>
     </option>
   </component>

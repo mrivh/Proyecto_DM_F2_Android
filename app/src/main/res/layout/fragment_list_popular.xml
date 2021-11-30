@@ -3,13 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ListFragment">
+    tools:context=".ListFragmentPopular">
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerPlaces"
+        android:id="@+id/recyclerPlacesPopular"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-        <!-- tools:listitem="@layout/card_images_places"/> -->
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal" />
 
 </FrameLayout>

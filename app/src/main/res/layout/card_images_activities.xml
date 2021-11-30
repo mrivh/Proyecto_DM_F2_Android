@@ -8,7 +8,7 @@
     tools:context=".Actividades">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/carView"
+        android:id="@+id/cardExperience"
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:cardCornerRadius="15dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/roundedImageView"
+            android:id="@+id/imageExperience"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"

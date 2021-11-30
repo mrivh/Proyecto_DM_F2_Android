@@ -51,7 +51,6 @@
             tools:listitem="@layout/card_images_activities"
             />
 
-
     </LinearLayout>
 
     <!-- Bottom navbar -->
